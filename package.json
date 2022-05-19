@@ -19,6 +19,8 @@
     "@serverless-stack/resources": "0.69.7",
     "aws-cdk-lib": "2.15.0",
     "aws-sdk": "^2.1137.0",
+    "react-bootstrap": "^1.6.1",
+    "react-icons": "^4.2.0",
     "stripe": "^9.1.0",
     "uuid": "^7.0.3"
   }

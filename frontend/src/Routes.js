@@ -9,6 +9,8 @@ import Notes from "./containers/Notes";
 import Settings from "./containers/Settings";
 import AuthenticatedRoute from "./components/AuthenticatedRoute";
 import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
+import ResetPassword from "./containers/ResetPassword";
+import ChangePassword from "./containers/ChangePassword";
 
 export default function Routes() {
   return (
@@ -30,6 +32,12 @@ export default function Routes() {
       </AuthenticatedRoute>
       <AuthenticatedRoute exact path="/notes/:id">
         <Notes />
+      </AuthenticatedRoute>
+      <UnauthenticatedRoute exact path="/login/reset">
+        <ResetPassword />
+      </UnauthenticatedRoute>
+      <AuthenticatedRoute exact path="/settings/password">
+        <ChangePassword />
       </AuthenticatedRoute>
       {/* Finally, catch all unmatched routes */}
       <Route>
